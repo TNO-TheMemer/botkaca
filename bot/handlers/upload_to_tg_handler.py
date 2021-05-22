@@ -113,7 +113,7 @@ async def func(filepath: str, client: Client,  message: Message, delete=False):
                 message,
                 info
             ),
-            caption=**{file.name}**
+            caption=f'<bold>{file.name}</bold>'
         )            
         LOGGER.debug(f'Uploaded : {file.name}')
     if delete:
